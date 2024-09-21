@@ -7,7 +7,7 @@ namespace Tyuiu.MorozovSM.Sprint1.Task6.V3.Lib
     {
         public string LastLetterWord(string value)
         {
-            string[] words = value.Trim().Split(' '); 
+            string[] words = value.Split(' ', StringSplitOptions.RemoveEmptyEntries); 
             string res = "";
             foreach (string word in words)
             {
